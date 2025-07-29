@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"
+/>
+</head>
+<body>
+  
+  <div id="header">
+    <div class="container">
+      <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- <div  class="header-text"> -->
+      <!-- <h2>Hello, I'm <span>Shivani </span><br></h2> -->
+      <!-- <p>Web Developer | SAP UI5/FIORI Developer</p> -->
+        <!-- <p><span id="changing-text"></span></p> -->
+    </div>
+    </div>
+    </div>
+     <div class="line"></div>
+
+  <div id="about">
+    <div class="aboutcontainer">
+      <div class="row">
+        <div class="about-col-1">
+          <img class = "img" src ="C:\Users\shivani.mothe\Pictures\Saved Pictures\image.jpg"  width="400" height="350">
+        </div>
+        <div class="about-col-2">
+          <!-- <h1 class="sub-title">About Me</h1> -->
+          <div  class="header-text">
+      <h2>Hello, I'm <span>Shivani </span><br></h2>
+      <!-- <p>Web Developer | SAP UI5/FIORI Developer</p> -->
+        <p><span id="changing-text"></span></p>
+    </div>
+    <div class="aboutme">
+    <div class="about-col-2">
+          <p>I’m a passionate developer with 3.5 years of experience in SAP UI5/Fiori. I love building UI and solving real-world problems.
+            Skilled in developing enterprise-grade SAP applications using SAPUI5, Fiori Elements, and OData and front-end performance optimization, debugging, and delivering clean, user-centric UI designs aligned with business
+             requirements and enhance user experience</p>
+            
+
+             </div>
+      </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="line"></div>
+  <div id="resume-section">
+  
+  <p class="section-subtitle">ALL ABOUT ME</p>
+  <h2 class="resume-title">
+    My Resume
+    <a href="SHIVANI_RESUME.pdf" download>
+      <i class="fas fa-download"></i>
+    </a>
+  </h2>
+</div>
+  
+
+  <div class="tab-titles">
+          <p class = "tab-links active-link" onclick="opentab('skills')" >Technical Skills</p>
+          <p class = "tab-links " onclick="opentab('experience')" >Experience</p>
+          <p class = "tab-links " onclick="opentab('projects')">Projects</p>
+          <p class = "tab-links " onclick="opentab('education')">Education</p>
+          
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Frontend </span><br>SAP UI5/FIORI, Javascript, XML views, HTML5 ,CSS,Fiori Elements</li>
+            <li><span>Backend Integration</span><br>OData CRUD,ABAP Debugging , SAP NWBC</li>
+            <li><span>Tools</span><br> SAP WebIDE, Eclipse, Visual Studio , BAS, Git, GitHub</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2022- Current </span><br>Software Engineer at Accenture</li>
+          </ul>
+        </div>
+         <div class="tab-contents" id= "projects">
+          <ul>
+          <li><span>MODEC - Mitsuai </span><br>A global offshore energy solutions provider, responsible for
+            digitalizing internal business processes through SAP Fiori applications integrated with ECC Systems</li>
+          
+          <li><span></span><br>Designed and deployed SAPUI5 apps integrated with ECC systems for user access
+      management, transaction code approvals, and timesheet management.
+        </li>
+        <li><span></span><br>Developed custom applications:User Access Request & Approval, Tcode Access
+Request & Approval, and Customized Sofec Timesheet
+        </li><span></span><br>
+        Activated and configured standard SAP Fiori apps including My Inbox and Approve
+Service Entry Sheets, handling launchpad setup, catalog/tile assignment, and workflow
+integration.
+          </ul>
+        </div>
+         <div class="tab-contents" id = "education">
+          <ul>
+            <li><span>2017-2021 </span><br>B.Tech in ECE at BRECW</li>
+            <li><span>2015-2017</span><br>Intermediate at Alphores institute</li>
+            <li><span>SSC</span><br> 10th standard at Brilliant grammar high school</li>
+          </ul>
+        </div>
+       
+ <div class="line"></div>
+  <!----contact section-->
+<div id="contact">
+    <div class="container">
+        <div class="contactrow">
+            <div class="contact-left">
+                <h1 class="contact-title" >Contact Me </h1>
+                <p><i class="fas fa-paper-plane"></i>shivani.mothe24@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>987654321</p>
+                <!-- <div class="social-icons">
+                  <a ><i class="fab fa-instagram"></i></a>
+                  <a><i class="fab fa-linkedin"></i></i></a>
+                </div> -->
+          </div>
+</div>
+<div id="find">
+    <div class="container">
+        <div class="contactrow">
+            <div class="contact-left">
+                <h1 class="contact-title" >Follow Me </h1>
+                <div class="social-icons">
+                 <a ><i class="fab fa-instagram"></i></a>
+                  <a><i class="fab fa-linkedin"></i></i></a>
+                 </div>
+                </div>
+          </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Shivani Mothe</p>
+  </footer>
+
+  <script>
+
+  const skills = [
+    " SAP UI5 Developer. ",
+    " Web Developer. ",
+    " Fiori Consultant. ",
+    " JavaScript Enthusiast. "
+  ];
+
+  let index = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const textElement = document.getElementById("changing-text");
+
+  function type() {
+    const current = skills[index];
+    const displayed = isDeleting
+      ? current.substring(0, charIndex--)
+      : current.substring(0, charIndex++);
+
+    textElement.textContent = displayed;
+
+    let delay = isDeleting ? 30 : 100;
+
+    if (!isDeleting && charIndex === current.length) {
+      delay = 500;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      index = (index + 1) % skills.length;
+    }
+
+    setTimeout(type, delay);
+  }
+
+  type();
+
+  </script>
+
+  <script src="script.js"></script>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }  
+  </script>
+</body>
+</html>
